@@ -1,6 +1,53 @@
 /* Task 2: 
 Enhance User Experience by adding visual highlights to selected answers
 Hint: You can use the className attribute for highlighting*/
+
+/* Task 2:*/
+
+/* Сонгогдсон сонголтын стиль */
+li.selected {
+    background-color: #3498db;
+    color: white;
+    border: 2px solid #1f77c5;
+    font-weight: bold;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
+
+/* Хувирлын эффект */
+li {
+    transition: all 0.2s ease;
+}
+
+/* Хуруу дээр ирэхэд өөрчлөгдөх стиль */
+li:hover {
+    background-color: #e6f2ff;
+    border-color: #3498db;
+}
+
+/* Товчлуур идэвхгүй үед */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+div {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #2c3e50;
+}
+
 .selected {
     cursor: pointer; /* Change cursor on hover for interactivity */
   }
